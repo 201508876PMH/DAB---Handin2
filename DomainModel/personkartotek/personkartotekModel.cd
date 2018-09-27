@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DomainModel.personkartotek.Teleselskab">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAACACAAAAAAAAAAA=</HashCode>
+      <FileName>personkartotek\Teleselskab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.personkartotek.Town">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAgAAAAAgAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>personkartotek\Town.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.personkartotek.AA">
+    <Position X="8.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>personkartotek\AA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.personkartotek.Person">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAQgBAAAAAAAAAggACEABAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>personkartotek\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.personkartotek.Note">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAABAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>personkartotek\Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.personkartotek.Adresse">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAAAAAAgAACAAAAAAAEAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>personkartotek\Adresse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.personkartotek.Telefonnummer">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABBAAACAgAAAAAAAAA=</HashCode>
+      <FileName>personkartotek\Telefonnummer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
