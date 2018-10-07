@@ -9,7 +9,7 @@
 -- gender          :  
 --
 CREATE TABLE Person (
-    personID       INT NOT NULL,
+    personID       INT IDENTITY(1,1) NOT NULL,
     adresseID      BIGINT NOT NULL,
     firstName      NVARCHAR(15) NOT NULL,
     middleName     NVARCHAR(15) NOT NULL,
@@ -19,5 +19,5 @@ CREATE TABLE Person (
 CONSTRAINT pk_Person PRIMARY KEY CLUSTERED (personID),
 CONSTRAINT fk_Person FOREIGN KEY (adresseID)
     REFERENCES Adresse (adresseID)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)

@@ -9,9 +9,8 @@ namespace DomainModel.personkartotek
 {
     public class Person
     {
-        public Person(int personID, long adresseID, string firstName, string middleName, string lastName, string context, string gender)
+        public Person(long adresseID, string firstName, string middleName, string lastName, string context, string gender)
         {
-            this.personID = personID;
             this.adresseID = adresseID;
             this.firstName = firstName;
             this.middleName = middleName;
@@ -43,5 +42,10 @@ namespace DomainModel.personkartotek
         public string context { get; set; }
         public string gender { get; set; }
 
+        public override string ToString()
+        {
+            return string.Format("ID-adresse: "+ adresseID + ", FN: " + firstName + ", MN: " + middleName + ", LN: " + lastName + ", context: "
+                                 + context + ", Gender: " + gender);
+        }
     }
 }

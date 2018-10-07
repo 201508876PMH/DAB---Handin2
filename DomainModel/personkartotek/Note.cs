@@ -8,7 +8,7 @@ namespace DomainModel.personkartotek
 {
     public class Note
     {
-        public Note(int personID, int noteID, int noteData)
+        public Note(int personID, int noteID, string noteData)
         {
             this.personID = personID;
             this.noteID = noteID;
@@ -17,7 +17,7 @@ namespace DomainModel.personkartotek
 
         public int personID { get; set; }
         public int noteID { get; set; }
-        public int noteData { get; set; }
+        public string noteData { get; set; }
 
         
     }

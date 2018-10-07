@@ -1,0 +1,89 @@
+﻿<Window x:Class="DABGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DABGUI"
+        xmlns:ViewModels="clr-namespace:DABGUI.ViewModels"
+        xmlns:Views="clr-namespace:DABGUI.Views"
+       
+        mc:Ignorable="d"
+        Title="Million DB appen" Height="490" Width="1400">
+
+    <Window.Resources>
+       <DataTemplate x:Name="personTemplate" DataType="{x:Type ViewModels:PersonViewModel}">
+           <Views:PersonView DataContext="{Binding}"></Views:PersonView>
+       </DataTemplate>
+        <DataTemplate x:Name="adresseTemplate" DataType="{x:Type ViewModels:AdresseViewModel}">
+            <Views:AdresseView DataContext="{Binding}"></Views:AdresseView>
+        </DataTemplate>
+        <DataTemplate x:Name="noteTemplate" DataType="{x:Type ViewModels:NoteViewModel}">
+            <Views:NoteView DataContext="{Binding}"></Views:NoteView>
+        </DataTemplate>
+        <DataTemplate x:Name="emailTemplate" DataType="{x:Type ViewModels:EmailViewModel}">
+            <Views:EmailView DataContext="{Binding}"></Views:EmailView>
+        </DataTemplate>
+        <DataTemplate x:Name="telefonnummerTemplate" DataType="{x:Type ViewModels:TelefonnummerViewModel}">
+            <Views:TelefonnummerView DataContext="{Binding}"></Views:TelefonnummerView>
+        </DataTemplate>
+        <DataTemplate x:Name="teleselskabTemplate" DataType="{x:Type ViewModels:TeleselskabViewModel}">
+            <Views:TeleselskabView DataContext="{Binding}"></Views:TeleselskabView>
+        </DataTemplate>
+        <DataTemplate x:Name="townTemplate" DataType="{x:Type ViewModels:TownViewModel}">
+            <Views:TownView DataContext="{Binding}"></Views:TownView>
+        </DataTemplate>
+        <DataTemplate x:Name="aaTemplate" DataType="{x:Type ViewModels:AAViewModel}">
+            <Views:AAView DataContext="{Binding}"></Views:AAView>
+        </DataTemplate>
+
+
+    </Window.Resources>
+    <DockPanel Dock="Top">
+        <Label DockPanel.Dock="Top" HorizontalAlignment="Center">Personkartotek</Label>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <DockPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="7" Background="AliceBlue">
+                <StackPanel>
+                    <Button Height="25" Click="Button_Click_1">Adresse</Button>
+                    <Button Height="25" Click="Button_Click_3">Email</Button>
+                    <Button Height="25" Click="Button_Click_2">Note</Button>
+                    <Button Height="25" Content="Person" Click="Button_Click"></Button>
+                    <Button Height="25" Click="Button_Click_4">Telefonnummer</Button>
+                    <Button Height="25" Click="Button_Click_5">Teleselskab</Button>
+                    <Button Height="25" Click="Button_Click_6">Town</Button>
+                    <Button Height="25" Click="Button_Click_7">Alternativ adresse</Button>
+                </StackPanel>
+            </DockPanel>
+
+            <ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="7" Content="{Binding}"></ContentControl>
+
+            <Grid.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+                <Style TargetType="{x:Type ListBox}">
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+            </Grid.Resources>
+        </Grid>
+
+       
+    </DockPanel>
+</Window>

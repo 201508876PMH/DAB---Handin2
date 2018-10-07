@@ -14,15 +14,40 @@ namespace ApplicationLogic
         public void theApp()
         {
             PersonkartotekDBUtil utilObject = new PersonkartotekDBUtil();
-            Person nyPerson = new Person(2, 2, "Anton", "Rørbæk", "Sihm", "skole", "mand");
-            utilObject.addPersonTilDB(ref nyPerson);
+            List<Person> personList;
 
-            Person personToSearchFor = new Person() {firstName = "Anton", lastName = "Sihm"};
-            utilObject.getPersonByName(ref personToSearchFor);
-            utilObject.getPersonByID(ref personToSearchFor);
+            Town newTown = new Town("8210", "Aarhus");
+            utilObject.addTownDB(ref newTown);
 
-            Email email1 = new Email(nyPerson.personID, 100);
-            utilObject.addEmailToDB(ref email1);
+            Adresse nyAdresse = new Adresse("kærvænget", "9", newTown.townID);
+            utilObject.addAdresseDB(ref nyAdresse);
+            
+            
+
+            Person nyPerson = new Person(nyAdresse.adresseID, "Anton", "Rørbæk", "Sihm", "skole", "mand");
+            //utilObject.addPersonTilDB(ref nyPerson);
+
+            //utilObject.getAllePersonDB();
+
+
+            //utilObject.updatePersonDB();
+
+            //Person nyPerson2 = new Person(nyAdresse.adresseID, "Anton", "Rørbæk", "test", "skole", "mand");
+            //utilObject.addPersonTilDB(ref nyPerson2);
+
+            //Person HjælpeObjPerson = new Person(, ¨dsbsdbds, aarus);
+
+            //utilObject.deletePersonDB("Anton", "sihm", aarus);
+            //utilObject.deletePersonDB(ref HjælpeObjPerson);
+
+
+            //Telefonnummer nytTelefonnummer = new Telefonnummer(50696065, 2, 100, "arbejde");
+            //utilObject.addTelefonnummerDB(ref nytTelefonnummer);
+
+            //Note note1 = new Note(20, 1002, "This is a note");
+            //utilObject.addNoteDB(ref note1);
+
+
 
         }
     }

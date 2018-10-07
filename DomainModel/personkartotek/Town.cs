@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 
 namespace DomainModel.personkartotek
 {
-    class Town
+    public class Town
     {
-        public Town(int townID, string postNummer, string townNavn)
+        public Town(string postNummer, string townNavn)
         {
-            this.townID = townID;
             this.postNummer = postNummer;
             this.townNavn = townNavn;
             adresseList = new List<Adresse>();
         }
 
+        public Town() { }
         public ICollection<Adresse> adresseList { get; set; }
         public int townID { get; set; }
         public string postNummer { get; set; }
         public string townNavn { get; set; }
 
+        public override string ToString()
+        {
+            return string.Format("ID: " + townID + ", post nummer: " + postNummer + ", town navn: " + townNavn);
+        }
     }
 }

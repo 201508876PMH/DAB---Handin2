@@ -1,0 +1,23 @@
+Use Cases/User Stories/
+----------------------
+
+Opret, ændre og slet en kontaktperson
+- As a user, i can add a person to the DB
+- As a user, i can change the information about a person
+- As a user, i can delete er person from the DB
+
+Ændre kontaktadresse
+- As a user, i can change the displayed information about my/a persons address
+
+Tilføje, ændre og slette en alternativ adresse, en e-mail og en telefonoplysning
+- As a user, i can add an alternativ address, an e-mail and a telefonnumber/information
+- As a user, i can change one, more or all of the following: alternativ address, e-mail and telefonnumber
+- As a user, i can delete one, more or all of the following: alternativ address, e-mail and telefonnumber
+
+Tilføje, ændre og slette en note.
+- As a user, i can add a note to a person
+- As a user, i can change a current note of a person
+- As a user, i can delete a note of a person
+
+Vise en oversigt over kontakter.
+- As a user, i can see an overview over all 

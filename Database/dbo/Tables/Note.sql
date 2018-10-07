@@ -5,7 +5,7 @@
 -- noteData        :  
 --
 CREATE TABLE Note (
-    noteID         INT NOT NULL,
+    noteID         INT IDENTITY(1,1) NOT NULL,
     personID       INT NOT NULL,
     noteData       NVARCHAR(1000) NOT NULL,
 CONSTRAINT pk_Note PRIMARY KEY CLUSTERED (noteID),
