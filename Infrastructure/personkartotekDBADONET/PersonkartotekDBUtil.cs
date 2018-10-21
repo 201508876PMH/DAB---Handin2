@@ -24,6 +24,8 @@ namespace Infrastructure.personkartotekDBADONET
             get
             {
                 var con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=handIn2;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
+                //var con = new SqlConnection(@"Data Source = st-i4dab.uni.au.dk; Initial Catalog = E18I4DABau536878; User ID = E18I4DABau536878; Password = E18I4DABau536878; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
+                //var con = new SqlConnection(@"Data Source = 85.218.241.69, 49170; Initial Catalog = PETER; User ID = admin; Password = password; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
                 con.Open();
                 return con;
             }

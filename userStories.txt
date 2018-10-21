@@ -21,3 +21,10 @@ Tilføje, ændre og slette en note.
 
 Vise en oversigt over kontakter.
 - As a user, i can see an overview over all 
+
+---------------------
+Yderligere informationer til dig jesper:
+
+Til forskellige metoder i PersonKartotekDBUtil klassen, fx. at man kun kan have en e-mail knyttet
+til en person, dette tjek er vist i addPersonDB metoden. Disse tjeks er ikke lavet alle steder, men er par steder.
+Som også nævtn i videon, så er alle funktionaliter ikke implementeret, men kun i person klassen.
